@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFF6E0;
+}
+header{
+    display: flex;
+    flex-direction: column;    
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav>h2{
+    font-size: 2.5rem;
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 8px;
+    color: #272829;
+    
+}
+
+.hero{
+    margin: 20px 25px;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.hero-container{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+     box-shadow: 0px 4px 33px 5px rgba(0,0,0,0.75);
+    width: 100%;
+    height:500px ;
+    background: rgb(39,40,41);
+    background: radial-gradient(circle, rgba(39,40,41,1) 21%, rgba(1,3,6,1) 85%);
+
+}
+
+.text>h1{
+    font-size: 3rem;
+    font-family: 'Black Han Sans', sans-serif;
+
+    letter-spacing: 5px;
+    color: #EEF4ED;
+    text-align: center;
+}
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+     }
+
+ .btn{ 
+    padding: 13px;
+    font-size: 14px;
+    background-color: #D8D9DA;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0 15px 15px 15px;
+    color: #272829; 
+    font-weight: bold;
+    letter-spacing: 2px;  
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+   }
+   .btn:hover{
+    background-color: #FFF6E0;
+    transform: scale(1.1);
+   }
+
+   .btn-2{
+    border: 2px solid #D8D9DA;
+    background: none;
+    color: #D8D9DA;
+   }
+
+    .btn-2:hover{
+        color: #272829;
+    } 
+    
+    
+    main, footer{
+       
+        
+       margin: 20px 25px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+      
+    }
+
+    .wrapper {
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+.about{
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    gap: 20px;
+}
+
+.abt-img{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 260px;
+    padding: 5px;
+    border-radius: 20px;
+     overflow: hidden;
+    
+    
+}
+.abt-img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.1);
+    background-color: #FFF6E0;
+    
+}
+.card-content{
+    padding: 0 20px;
+}
+.card>h2{
+    font-family:  'Open Sans', sans-serif;
+    ;
+    font-weight: bolder;
+}
+.card>p{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 800px;
+}
+
+.social-media{
+    box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.fa-github:before, .fa-linkedin:before{
+    color: #272829;
+   font-size: 50px;
+}
+
+.social-media>a:hover{
+    transform: scale(1.1);
+}
+
+
+#projects{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.prj{
+    display: flex;
+   justify-content: space-between;
+   text-align: center;
+   align-items: center;
+}
+.prj-img{
+    width: 73%;
+    height: 100%;
+    background: rgb(39,40,41);
+    background: radial-gradient(circle, rgba(39,40,41,1) 21%, rgba(1,3,6,1) 85%);
+    box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.1);;
+}
+
+.prj-card{
+    width: 25%;
+    font-family:'Montserrat', sans-serif;
+    color: #272829 ;
+    height: 333.14px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 0px 14px 10px rgba(0,0,0,0.1);;
+}
+
+.project1>.prj-img>img{
+   /*  background-image: url(./Assets/Screenshot\ 2023-08-27\ 230139.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+}
+
+footer{
+    background: rgb(39,40,41);
+    background: radial-gradient(circle, rgba(39,40,41,1) 21%, rgba(1,3,6,1) 85%);
+    
+}
+footer>h2{
+        justify-content: flex-end;
+        font-family:'Open Sans', sans-serif;
+        color: #FFF6E0;
+        font-style: italic;
+        margin-bottom: 20px;
+        font-size: 15px;
+        letter-spacing: 5px;
+}
+.contact{
+    width: 1000px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+
+    .btn{
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        
+    }
+
+}
+
+
+/* for tablet */
+
+@media (min-width: 481px) and (max-width: 850px) {
+
+    main{
+        margin-top: -41px;
+    }
+    .wrapper{
+        width: 744px;
+    }
+
+    .about{
+        grid-template-columns: 1fr 400px 1fr;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+    
+
+@media (max-width: 480px) {
+
+   header{
+    width: 100%;
+
+    .text>h1{
+        font-size: 2.5rem;
+    }
+   }
+ 
+  main,footer{
+    width: 340px;
+    margin: 10px 26px;
+  }
+
+
+   .wrapper{
+    width: 100%;
+    overflow: hidden;
+    order: 1;
+    margin-top: 15px;
+
+  .about{
+    width: 100%;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-columns: none;
+    order: 2;
+    margin-top: 50px;
+ }
+
+ .abt-img{
+    justify-self: center;
+ }
+
+ .card{
+    width: 100%;
+ }
+ .card-content{
+    padding: 0 27px; 
+ }
+.card>p{
+    
+        margin: 3px 0;
+        padding: 10px; 
+}
+
+.card>h2{
+    margin: 1px -16px;
+    text-align: left;
+}
+
+ .social-media{
+    flex-direction: row;
+
+   
+ }
+ .fa-github:before, .fa-linkedin:before{
+    font-size: 45px;
+ }
+   }
+
+.prj-card{
+    height: 115.89px;
+}
+.prj-img{
+    height: 100%;
+}
+.prj-card>h2{
+    font-size: 14px;
+}
+
+.contact{
+    width: 100%;
+    height: 150px;
+    .btn{
+        font-size: 10px;
+    }
+}
+
+footer>h2{
+    font-size: 8px;
+}
+
+ 
+}
+
+
+   
+
+
+
+
